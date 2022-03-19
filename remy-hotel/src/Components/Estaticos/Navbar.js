@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Habitaciones from '../No estaticos/Habitaciones';
+import Habitaciones from '../Noestaticos/Habitaciones';
 import logorh from './img/rhlogo.svg';
 import logorhwt from './img/rhlogowt.svg';
 import {NavLink} from 'react-router-dom';

@@ -22,6 +22,7 @@ nav {
   background-color: white;
   align-items: center;
   color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 nav ul {
   float: right;
@@ -201,7 +202,35 @@ footer {
 }
 /**Home**/
 
-@media (max-width:960px){
+/**hab page estilos**/
+.main_container {
+  padding-top: 130px;
+  margin-bottom: 50px;
+}
+.main_container p {
+  font-size: 40px;
+}
+.container_habi{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3,auto);
+}
+.images_container {
+  padding: 40px 0;
+  margin: 15px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.images_container p{
+  font-size: 15px;
+  margin: 20px 30px;
+}
+.images_hab {
+  width: 450px;
+  padding: 0 15px;
+}
+  /**hab page estilos**/
+  
+@media (max-width:980px){
 
   /**nav querys**/ 
   
@@ -221,6 +250,15 @@ footer {
   }
 
   /**nav querys**/ 
+  /**hab querys**/
+  .container_habi {
+    display: inline-block;
+  }
+  .images_hab{
+    width: 480px;
+  }
+  /**hab querys**/
+
 }
 @media (max-width: 760px){
 
@@ -269,9 +307,6 @@ footer {
   .reservar_button {
     display: inline-block;
   }
-
-  /**nav querys**/ 
-
   /**footer querys**/ 
 
   footer{
@@ -290,7 +325,18 @@ footer {
   /**footer querys**/ 
 }
 
-@media (max-width: 400px){
+
+  
+@media (max-width: 520px){
+  /** hab page querys**/
+  .images_hab {
+    width: 320px;
+  }
+  /** hab page querys**/
+}
+
+
+@media (max-width: 360px){
   /**nav querys**/ 
 
   .logorhwt{
@@ -305,6 +351,11 @@ footer {
   }
 
   /**nav querys**/ 
+  /** hab page querys**/
+  .images_hab {
+    width: 250px;
+  }
+  /** hab page querys**/
 }
 
 

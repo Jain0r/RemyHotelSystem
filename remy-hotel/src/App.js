@@ -3,8 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Estaticos/Navbar';
 import Footer from './Components/Estaticos/Footer';
-import Home from './Components/No estaticos/Home';
-import Habitaciones from './Components/No estaticos/Habitaciones';
+import Home from './Components/Noestaticos/Home';
+import Habitaciones from './Components/Noestaticos/Habitaciones';
 import {Route, Routes} from 'react-router-dom';
 
 
