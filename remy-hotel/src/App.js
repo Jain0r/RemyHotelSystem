@@ -1,4 +1,49 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
+import './App.css';
+import Navbar from './Components/Estaticos/Navbar';
+import Footer from './Components/Estaticos/Footer';
+import Home from './Components/No estaticos/Home';
+import Habitaciones from './Components/No estaticos/Habitaciones';
+import {Route, Routes} from 'react-router-dom';
+
+
+
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path='/Habitaciones' element={<Habitaciones/>}/>
+      </Routes>
+    </div>
+  );
+}
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** import logo from './logo.svg';
 import './App.css';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
@@ -27,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; **/

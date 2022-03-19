@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import Habitaciones from './Habitaciones';
-import logorh from './rhlogo.svg';
-import logorhwt from './rhlogowt.svg';
-import {Link} from 'react-router-dom';
+import Habitaciones from '../No estaticos/Habitaciones';
+import logorh from './img/rhlogo.svg';
+import logorhwt from './img/rhlogowt.svg';
+import {NavLink} from 'react-router-dom';
 
 
 
 
 
-function Navbar() {
+const Navbar =() => {
     return (
         <nav>
         <div className='logo_container'>
@@ -23,11 +23,11 @@ function Navbar() {
         </label>
         <ul>
             <li><i className='fas fa-home'></i>
-            <Link to='/'>Inicio</Link>
+            <NavLink to='/'>Inicio</NavLink>
             </li>
             <li><i className='fas fa-building'></i><a href="" section="">Nosotros</a></li>
             <li><i className='fas fa-bed'></i>
-            <Link to='/Habitaciones'>Habitaciones</Link>
+            <NavLink to='/Habitaciones'>Habitaciones</NavLink>
             </li>
             <li><i className='fas fa-image'></i><a href="" section="">Galeria</a></li>
             <li><i className='fas fa-phone'></i><a href="" section="">Contacto</a>

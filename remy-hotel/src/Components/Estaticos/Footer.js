@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import logorh from './rhlogowhite.svg';
+import logorh from './img/rhlogowhite.svg';
 
-function Footer() {
+const Footer =() => {
     return (
         <footer>
         <div className='footer_logo'>
