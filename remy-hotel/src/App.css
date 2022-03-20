@@ -216,26 +216,60 @@ footer {
   grid-template-rows: repeat(3,auto);
 }
 .images_container {
+  display: flex;
   padding: 40px 0;
   margin: 15px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 .images_container p{
-  font-size: 15px;
-  margin: 20px 30px;
+  font-size: 14px;
+  margin: 5px 10px;
 }
 .images_hab {
-  width: 450px;
+  width: 300px;
   padding: 0 15px;
 }
+
+.hab_overlay_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3,auto);
+  gap: 10px;
+}
+.title_hab_overlay_container {
+  margin: 0 5px;
+}
+.image_overlay_container {
+  display: flex;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.hab_reservar_button {
+  border-radius: 5px;
+  font-size: 17px;
+  border: 2px solid black;
+  padding: 8px 30px;
+  margin:0 5px;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.hab_reservar_button:hover {
+  background-color: #033e6e;
+  color: white;
+  border: 2px solid white;
+}
+
   /**hab page estilos**/
   
+
 @media (max-width:980px){
 
   /**nav querys**/ 
   
   nav ul li a {
-    font-size: 15px;
+    font-size: 13px;
   }
   .reservar_button{
     font-size: 15px;
@@ -260,9 +294,9 @@ footer {
   /**hab querys**/
 
 }
-@media (max-width: 760px){
+@media (max-width: 740px){
 
-  /**nav querys**/ 
+  /**nav queryss**/ 
 
   nav ul {
     position: fixed;
@@ -323,6 +357,11 @@ footer {
   }
 
   /**footer querys**/ 
+  /** hab page querys**/
+  .images_container{
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 
@@ -330,7 +369,7 @@ footer {
 @media (max-width: 520px){
   /** hab page querys**/
   .images_hab {
-    width: 320px;
+    width: 340px;
   }
   /** hab page querys**/
 }
