@@ -2,14 +2,14 @@
     {
         "id": 1,
         "section": "Habitación Cama Simple",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-1.jpg",
         "price": "S/.95"
     },
     {
         "id": 2,
         "section": "Habitación Cama Doble",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-2.jpg",
         "price": "S/.150"
         
@@ -18,28 +18,28 @@
     {
         "id": 3,
         "section": "Habitación Cama Triple",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-3.jpg",
         "price": "S/.220"
     },
     {
         "id": 4,
         "section": "Habitación Matrimonial",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-4.jpg",
         "price": "S/.200"
     },
     {
         "id": 5,
         "section": "Habitación Queen Size",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-5.jpg",
         "price": "S/.180"
     },
     {
         "id":6,
         "section": "Habitación Presidencial",
-        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario. No cuenta con desayuno buffet debido a que eres pobre obviamente",
+        "sub_section": "Nuestra Suit Junior cuenta con una habitación de 25m2, una cama queen, baño propio, escritorio y armario.",
         "image": "images/img-6.jpg",
         "price": "S/.450"
     }

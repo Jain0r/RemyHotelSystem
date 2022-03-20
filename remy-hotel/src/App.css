@@ -217,7 +217,7 @@ footer {
 }
 .images_container {
   display: flex;
-  padding: 40px 0;
+  padding: 40px 10px;
   margin: 15px;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
@@ -226,17 +226,22 @@ footer {
   margin: 5px 10px;
 }
 .images_hab {
-  width: 300px;
-  padding: 0 15px;
+  width: 100%;
+  margin: 0 10px;
+  border-radius: 10px;
 }
 
 .hab_overlay_container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3,auto);
+  margin: 0 10px;
   gap: 10px;
 }
 .title_hab_overlay_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 5px;
 }
 .image_overlay_container {
@@ -264,7 +269,7 @@ footer {
   /**hab page estilos**/
   
 
-@media (max-width:980px){
+@media (max-width:1024px){
 
   /**nav querys**/ 
   
@@ -288,15 +293,13 @@ footer {
   .container_habi {
     display: inline-block;
   }
-  .images_hab{
-    width: 480px;
-  }
+
   /**hab querys**/
 
 }
 @media (max-width: 740px){
 
-  /**nav queryss**/ 
+  /**nav querys**/ 
 
   nav ul {
     position: fixed;
@@ -366,11 +369,8 @@ footer {
 
 
   
-@media (max-width: 520px){
+@media (max-width: 580px){
   /** hab page querys**/
-  .images_hab {
-    width: 340px;
-  }
   /** hab page querys**/
 }
 
@@ -391,9 +391,7 @@ footer {
 
   /**nav querys**/ 
   /** hab page querys**/
-  .images_hab {
-    width: 250px;
-  }
+
   /** hab page querys**/
 }
 
