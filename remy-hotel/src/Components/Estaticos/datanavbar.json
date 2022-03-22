@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "section": "Home",
+        "path": "/"
+    },
+    {
+        "id": 2,
+        "section": "Habitaciones",
+        "path":"/Habitaciones"
+    },
+    {
+        "id": 3,
+        "section": "Paquetes",
+        "path": "/"
+    },
+    {
+        "id": 4,
+        "section": "Contacto",
+        "path": "/"
+    }
+]

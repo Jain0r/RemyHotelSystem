@@ -11,7 +11,7 @@
   pointer-events: none;
 }
 
-/** Navbar **/
+/**Nav **/
 nav {
   height: 100px;
   width: 100%;
@@ -19,37 +19,59 @@ nav {
   justify-content: space-between;
   z-index: 50;
   position: fixed;
-  background-color: white;
   align-items: center;
   color: black;
+  background: rgb(248, 242, 242);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+.menu_container {
+  display: flex;
+}
 nav ul {
-  float: right;
-  margin-right: 20px;
-  margin-bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 92%;
+  background:#113151;
+  top: 100px;
+  right: -100%;
+  text-align: center;
+  transition: all .5s;
+  z-index: 100;
+  padding-left: 0;
+  letter-spacing: 5px;
+  background: rgb(106 5 20 / 95%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-nav ul li {
-  display: inline-block;
-  line-height: 80px;
+nav ul li{
+  display: flex;
+  margin: 30px 0;
+  line-height: 30px;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  padding: 0 8px;
 }
-nav ul li a{
-  color: black;
-  font-size: 17px;
-  padding: 0px 5px;
-  border-radius: 3px;
-  text-transform: uppercase;
+nav ul li a {
+  color: white;
+  font-size: 25px;
+  padding: 0;
+  text-transform: none;
   text-decoration: none;
+  cursor: pointer;
 }
 
-a.active,a:hover {
-  background: #033e6e;
-  transition: .5s;
-  color: white;
+nav ul li a:hover {
+  color: wheat;
 }
+
+#check:checked ~ ul {
+  right:  0;
+}
+
+
+
 
 .name_main {
   display: flex;
@@ -74,25 +96,20 @@ a.active,a:hover {
 
 .logo_container a:hover {
   background: none;
-}
-
-.logorh {
-  width: 250px;
-  margin: 0 20px;
-  background: none;
+  cursor: pointer;
 }
 
 .logorhf {
   width: 300px;
 }
 .checkbtn {
-  font-size: 40px;
+  font-size: 50px;
   color: black;
   float: right;
   line-height: 10px;
   margin-right: 10px;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 #check {
   display: none;
@@ -100,25 +117,25 @@ a.active,a:hover {
 .reservar_button {
   border-radius: 5px;
   font-size: 17px;
-  border: 2px solid black;
+  border: 2px solid white;
   padding: 8px 30px;
   margin:0 5px;
   letter-spacing: 1.5px;
+  background: none;
+  color: white;
 }
 
 .reservar_button:hover {
-  background-color: #033e6e;
-  color: white;
-  border: 2px solid white;
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid white;
 }
 
-nav ul form button .fas{
-  padding: 0 10px;
-}
+
 .logorhwt {
-  display: none;
+  display: block;
 }
-/** Navbar **/
+
 /**Footer **/
 footer {
   width: 100%;
@@ -128,9 +145,7 @@ footer {
   padding: 40px 20px;
   letter-spacing: 1px;
   color: white;
-  background: #200122;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #6f0000, #200122);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #6f0000, #200122); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0b0b0b;
   
 }
 
@@ -183,7 +198,7 @@ footer {
     right: 0;
     background-color: rgba(0,0,0,0.4);
 }
-.hotelwall-overlay {
+.hotelwall_overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -192,15 +207,67 @@ footer {
   padding: 1rem;
   border-radius: calc(.25rem - 1px);
   display: inline-flex;
-  justify-content: center;
+  justify-content: flex-start;
+  text-align: initial;
   align-items: center;
   color: white;
   font-size: 25px;
+  margin: auto;
 }
-.hotelwall-overlay div h1 {
+.hotelwall_overlay_text h1{
   font-size: 50px;
 }
+.hotelwall_overlay_text {
+  font-size: 30px;
+  margin: 0 50px;
+}
+
 /**Home**/
+
+/**Nosotros estilos**/
+.instalaciones_container {
+  background-color: ghostwhite;
+  color: #a0a0a0;
+}
+.instalaciones_overlay {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.instalaciones_overlay p {
+  font-size: 45px;
+}
+.text_insta_items p {
+  max-width: 500px;
+  padding: 0 20px;
+}
+
+.instalaciones_items_container{
+  padding: 20px 20px;
+  text-align: initial;
+  width: 70%;
+  margin: auto;
+}
+.instalaciones_items {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3,auto);
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  overflow: hidden;
+}
+.items_container {
+  display: flex;
+}
+.items_img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+/**Notros estilos**/
 
 /**hab page estilos**/
 .main_container {
@@ -214,6 +281,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3,auto);
+  width: 90%;
+  margin: auto;
 }
 .images_container {
   display: flex;
@@ -272,10 +341,6 @@ footer {
 @media (max-width:1024px){
 
   /**nav querys**/ 
-  
-  nav ul li a {
-    font-size: 13px;
-  }
   .reservar_button{
     font-size: 15px;
   }
@@ -284,10 +349,6 @@ footer {
     width: 120px;
     margin-right: 10px;
   }
-  .logorh {
-    display: none;
-  }
-
   /**nav querys**/ 
   /**hab querys**/
   .container_habi {
@@ -295,55 +356,22 @@ footer {
   }
 
   /**hab querys**/
-
+  /**home page **/
+  .instalaciones_items_container{
+    width: 90%;
+  }
+  .instalaciones_items{
+    display: flex;
+    flex-direction: column;
+  }
+  .text_insta_items p{
+    max-width: none;
+  }
+  /** home page**/
 }
 @media (max-width: 740px){
 
-  /**nav querys**/ 
-
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background:#113151;
-    top: 100px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    z-index: 100;
-    padding-left: 0;
-    padding-top: 160px;
-    letter-spacing: 5px;
-    background: rgb(106 5 20 / 95%);
-  }
-  nav ul li{
-    display: flex;
-    margin: 50px 0;
-    line-height: 30px;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul li a {
-    color: white;
-    font-size: 25px;
-    padding: 0;
-    text-transform: none;
-  }
-  nav ul li .fas {
-    display: none;
-  }
-  a:hover,a.active {
-    background: none;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  .checkbtn {
-    display: block;
-  } 
-  .reservar_button {
-    display: inline-block;
-  }
+  /**nav querys**
   /**footer querys**/ 
 
   footer{
@@ -370,14 +398,16 @@ footer {
 
   
 @media (max-width: 580px){
+  /** nav querys**/
+
+  /** nav querys**/
   /** hab page querys**/
   /** hab page querys**/
 }
 
 
-@media (max-width: 360px){
+@media (max-width: 390px){
   /**nav querys**/ 
-
   .logorhwt{
     width: 90px;
   }

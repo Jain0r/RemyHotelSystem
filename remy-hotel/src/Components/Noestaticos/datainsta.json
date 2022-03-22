@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "section": "Restaurante",
+        "sub_section": "Cocina diversa, fresca y de calidad. En nuestro restaurante, la cocina local se fusiona con la internacional. Podrás disfrutar también de la cocina a la vista, el showcooking de nuestros cocineros.",
+        "image": "images/imgn-1.jpg"
+    },
+    {
+        "id": 2,
+        "section": "Piscinas",
+        "sub_section": "La piscina central es ideal para disfrutar de momentos tranquilos bajo el sol. La piscina con hidromasaje está más aislada y es también idónea para los más pequeños.",
+        "image": "images/imgn-2.jpg"
+    },
+    {
+        "id": 3,
+        "section": "Gimnasio",
+        "sub_section": "Equipado y constantemente actualizado, para que no dejes de estar en forma aún cuando estes fuera de casa.",
+        "image": "images/imgn-3.jpg"
+    },
+    {
+        "id": 4,
+        "section": "Spa",
+        "sub_section": "Tu lugar de máximo relax y desconexión. Cuenta con piscina climatizada de hidromasaje, sauna, baño turco, duchas de sensaciones y tres cabinas destinadas a tratamientos personalizados.",
+        "image": "images/imgn-4.jpg"
+    }
+]

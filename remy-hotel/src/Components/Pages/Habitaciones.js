@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+
+import Datahabi from './datahabi.json';
 import Navbar from '../Estaticos/Navbar';
 import Footer from '../Estaticos/Footer';
-import Datahabi from './datahabi.json'
-import { faRecordVinyl } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const  Habitaciones = () => {
   return (
-    <div>
+    <div id='Habitaciones'>
       <Navbar></Navbar>
       <div className='main_container'>
         <p>Nuestras Habitaciones</p>
@@ -26,13 +26,10 @@ const  Habitaciones = () => {
              <div>
              <strong>Precio por noche: </strong>
              <span>{data.price}</span>
-             <form action=''>
-             <button type='submit'  className='hab_reservar_button'>Reservar</button>
-             </form>
              </div>
              </div>
              <div className='image_overlay_container'>
-             <img  className='images_hab' src={`${data.image}`}></img>
+             <img  className='images_hab' src={`${data.image}`}alt="Imagenes de habitaciones"></img>
              </div>
            </div>
            )

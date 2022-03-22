@@ -1,26 +1,35 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import Navbar from './Components/Estaticos/Navbar';
-import Footer from './Components/Estaticos/Footer';
-import Home from './Components/Noestaticos/Home';
-import Habitaciones from './Components/Noestaticos/Habitaciones';
-import {Route, Routes} from 'react-router-dom';
+import Home from './Components/Pages/Home';
+import Habitaciones from './Components/Pages/Habitaciones';
+import {Routes, Route} from 'react-router-dom'
 
 
 
 function App() {
+  
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Home/>}/>
+        <Route exact path='/' element={<Home/>}/>
         <Route exact path='/Habitaciones' element={<Habitaciones/>}/>
+        <Route exact path='/' element={<Home/>}/>
+        <Route exact path='/' element={<Home/>}/>
       </Routes>
     </div>
   );
 }
 export default App;
 
+
+
+/**
+ <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path='/Habitaciones' element={<Habitaciones/>}/>
+        <Route exact path='/Nosotros' element={<Nosotros/>}/>
+  </Routes>
+ */
 
 
 
