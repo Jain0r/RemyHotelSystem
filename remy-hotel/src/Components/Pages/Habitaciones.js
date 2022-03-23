@@ -5,6 +5,7 @@ import Footer from '../Estaticos/Footer';
 
 
 
+
 const  Habitaciones = () => {
   return (
     <div id='Habitaciones'>

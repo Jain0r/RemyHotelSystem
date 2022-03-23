@@ -1,6 +1,7 @@
 import Navbar from "../Estaticos/Navbar";
 import Footer from "../Estaticos/Footer";
 import Instalaciones from "../Noestaticos/Instalaciones";
+import GoToTop from "../../GoToTop";
 
 
 
@@ -15,7 +16,7 @@ const Home = () => {
             <h1>Vive la experiencia Remy Hotel</h1>
              <p class="card-text">Haremos de tu estancia lo más memorable de tu viaje, haremos tu viaje inolvidable.</p>
              <form action=''>
-        <button type='submit'  className='reservar_button'>Reservar Aqui <i className='fas fa-calendar-alt'></i></button>
+        <button type='submit'  className='reservar_button'>Reserva Ahora<i class="fas fa-arrow-right"></i></button>
         </form>
            </div>
          </div>
