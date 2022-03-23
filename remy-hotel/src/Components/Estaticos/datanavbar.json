@@ -2,21 +2,25 @@
     {
         "id": 1,
         "section": "Home",
-        "path": "/"
+        "path": "/",
+        "cName": "nav-text"
     },
     {
         "id": 2,
         "section": "Habitaciones",
-        "path":"/Habitaciones"
+        "path":"/Habitaciones",
+        "cName": "nav-text"
     },
     {
         "id": 3,
         "section": "Paquetes",
-        "path": "/"
+        "path": "/",
+        "cName": "nav-text"
     },
     {
         "id": 4,
         "section": "Contacto",
-        "path": "/"
+        "path": "/",
+        "cName": "nav-text"
     }
 ]

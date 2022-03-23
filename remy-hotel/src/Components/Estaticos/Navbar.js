@@ -1,12 +1,55 @@
+import React, { useState } from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { Link } from 'react-router-dom';
+import  NavbarData  from './datanavbar.json';
+import logorhwt from '../Estaticos/img/rhlogowtwhite.svg'
 
-import logorhwt from './img/rhlogowt.svg';
-import DataNavbar from './datanavbar.json'
-import { NavLink } from 'react-router-dom';
 
 
+function Navbar() {
+  const [sidebar, setSidebar] = useState(false);
 
+  const showSidebar = () => setSidebar(!sidebar);
 
-const Navbar =() => {
+  return (
+    <>
+        <div className='navbar'>
+        <div className='logo_container' >
+            <Link to='/' smooth={true} duration={500}>
+            <img src={logorhwt} className='logorhwt' alt="logo" />
+            </Link>
+        </div>
+          <Link to='#' className='menu-bars'>
+            <FaIcons.FaBars onClick={showSidebar} />
+          </Link>
+        </div>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        <div className='nav-menu-close-container'>
+        <Link to='#' className='close-bars' onClick={showSidebar}>
+                <AiIcons.AiOutlineClose />
+              </Link>
+        </div>
+        <div className='nav-menu-items-container'>
+          <ul className='nav-menu-items'>
+            {
+              NavbarData && NavbarData.map(data => {
+                return (
+                    <li key={data.id}>
+                    <Link to={`${data.path}`} onClick={showSidebar} className={data.cName}>{data.section}</Link>
+                    </li>
+                )
+            }) 
+            }
+          </ul>
+          </div>
+        </nav>
+    </>
+  );
+}
+export default Navbar;
+  /**
+   const Navbar =() => {
     return (
         <nav>
         <div className='logo_container' >
@@ -34,33 +77,4 @@ const Navbar =() => {
   }
   
   export default Navbar;
-  
-  /**
-   <nav>
-        <div className='logo_container'>
-            <Link to="Home" smooth={true} duration={500}>
-            <img src={logorh} className='logorh' alt="logo" />
-            <img src={logorhwt} className='logorhwt' alt="logo" />
-            </Link>
-        </div>
-        <form action=''>
-        <button type='submit'  className='reservar_button'>Reservar <i className='fas fa-calendar-alt'></i></button>
-        </form>
-        <div className='menu'>
-        <ul>
-            <li><i className='fas fa-home'></i>
-            <NavLink to='/'>Nosotros</NavLink>
-            </li>
-            <li><i className='fas fa-building'></i>
-            <Link to="Instalaciones" smooth={true} duration={500}>Instalaciones</Link>
-            </li>
-            <li><i className='fas fa-bed'></i>
-            <Link to="Habitaciones" smooth={true} duration={500}>Habitaciones</Link>
-            </li>
-            <li><i className='fas fa-image'></i><a href="" section="">Galeria</a></li>
-            <li><i className='fas fa-phone'></i><a href="" section="">Contacto</a>
-            </li>
-        </ul>
-        </div>
-        </nav>
    */

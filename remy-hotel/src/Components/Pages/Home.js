@@ -1,7 +1,7 @@
 import Navbar from "../Estaticos/Navbar";
 import Footer from "../Estaticos/Footer";
 import Instalaciones from "../Noestaticos/Instalaciones";
-import GoToTop from "../../GoToTop";
+import MainsectionHome from "../Noestaticos/MainsectionHome";
 
 
 
@@ -9,7 +9,16 @@ const Home = () => {
   return (
     <div id='Home'>
       <Navbar></Navbar>
-      <header>
+      <MainsectionHome></MainsectionHome>
+      <Instalaciones></Instalaciones>
+      <Footer></Footer>
+    </div>
+  );
+}
+
+export default Home;
+/** 
+ <header>
        <div className='hotelwall'>
          <div className='hotelwall_overlay'>
            <div className='hotelwall_overlay_text'>
@@ -21,11 +30,5 @@ const Home = () => {
            </div>
          </div>
         </div>
-      </header>
-      <Instalaciones></Instalaciones>
-      <Footer></Footer>
-    </div>
-  );
-}
-
-export default Home;
+  </header>
+*/

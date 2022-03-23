@@ -2,6 +2,7 @@
 import Datahabi from './datahabi.json';
 import Navbar from '../Estaticos/Navbar';
 import Footer from '../Estaticos/Footer';
+import MainsectionHabi from '../Noestaticos/MainsectionHabi';
 
 
 
@@ -10,6 +11,7 @@ const  Habitaciones = () => {
   return (
     <div id='Habitaciones'>
       <Navbar></Navbar>
+      <MainsectionHabi></MainsectionHabi>
       <div className='main_container'>
         <p>Nuestras Habitaciones</p>
       <div className="container_habi">
