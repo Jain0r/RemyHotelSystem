@@ -18,7 +18,7 @@ const  Habitaciones = () => {
        {
          Datahabi && Datahabi.map( data => {
            return(
-           <div className='images_container' key={data.id}>
+           <div className='card_habi' key={data.id}>
              <div className='hab_overlay_container'>
             <div className='title_hab_overlay_container'>
              <h4>{data.section}</h4>

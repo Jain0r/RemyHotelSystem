@@ -2,6 +2,7 @@ import Navbar from "../Estaticos/Navbar";
 import Footer from "../Estaticos/Footer";
 import Instalaciones from "../Noestaticos/Instalaciones";
 import MainsectionHome from "../Noestaticos/MainsectionHome";
+import Diferencias from "../Noestaticos/Diferencias";
 
 
 
@@ -10,6 +11,7 @@ const Home = () => {
     <div id='Home'>
       <Navbar></Navbar>
       <MainsectionHome></MainsectionHome>
+      <Diferencias></Diferencias>
       <Instalaciones></Instalaciones>
       <Footer></Footer>
     </div>
