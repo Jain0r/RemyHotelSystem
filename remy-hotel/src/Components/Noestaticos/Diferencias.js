@@ -29,7 +29,7 @@ const Diferencias = () => {
        </div>
     </div>
     <div>
-        <img  classname="flower"src={rhflower} alt='imagen de flor'></img>
+        <img  className="flower" src={rhflower} alt='imagen de flor'></img>
     </div>
     </div>
     )
