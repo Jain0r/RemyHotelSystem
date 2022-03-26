@@ -1,43 +1,36 @@
 
 import DataInsta from "./datainsta.json";
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 
-const Instalaciones = () => {
+
+const Insp = () => {
     return ( 
         <div id="Instalaciones">
-        <div className='instalaciones_container'>
+        <div className="instalaciones_title">
+            <strong>Nuestras instalaciones</strong>
+            <p>Nuestro Hotel cuenta con la infraestructura y personal adecuado para hacer que tu estadía sea cómoda y agradable. </p>
+        </div>
         <div>
-       <div className='instalaciones_items_container'>
-        <div className='instalaciones_overlay'data-aos="fade-up">
-        <p>Nuestras instalaciones</p>
+        <div className="instalaciones_container">
+            {
+                DataInsta && DataInsta.map ( data => {
+                 return (
+                     <div key={data.id}>
+                         <div className="img_container">
+                            <img className="insta_img" src={data.image} alt="Instalaciones"></img>
+                         </div>
+                         <div className="img_overlay">
+                             <h2>{data.section}</h2>
+                             <p>{data.sub_section}</p>
+                         </div>
+                     </div>
+                 )
+                }
+                )
+            }
+            </div>
         </div>
-       {
-        DataInsta && DataInsta.map( data => {
-            return ( 
-               <div  className='instalaciones_items' key={data.id}>
-               <div  data-aos="fade-right" data-aos-duration="1000" className='overlay_items'>
-               <div className='title_insta_items'>
-               <h2>{data.section}</h2>
-               </div>
-               <div className='text_insta_items'>
-               <p >{data.sub_section}</p>
-               </div>
-               </div>
-               <div  data-aos="fade-left" data-aos-duration="1300" className='items_container'>
-               <img className='items_img' src={`${data.image}`} alt='Imagen de instalación'></img>
-               </div>
-               </div>
-            )
-        })
-       }
-       </div>
         </div>
-       </div>
-       </div>
     );     
 }
 
-export default Instalaciones
+export default Insp;

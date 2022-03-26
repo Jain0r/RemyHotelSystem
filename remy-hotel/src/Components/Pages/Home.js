@@ -1,8 +1,8 @@
 import Navbar from "../Estaticos/Navbar";
 import Footer from "../Estaticos/Footer";
-import Instalaciones from "../Noestaticos/Instalaciones";
 import MainsectionHome from "../Noestaticos/MainsectionHome";
 import Diferencias from "../Noestaticos/Diferencias";
+import Instalaciones from "../Noestaticos/Instalaciones";
 
 
 

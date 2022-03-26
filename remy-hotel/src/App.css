@@ -277,45 +277,46 @@ footer {
 /** Nosotros estilos **/
 
 /** Nosotrs estilos **/
-/**Insta estilos**/
-.instalaciones_container {
-  background-color: ghostwhite;
-  color: #a0a0a0;
-}
-.instalaciones_overlay {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-.instalaciones_overlay p {
-  font-size: 45px;
-}
-.text_insta_items p {
-  max-width: 500px;
-}
 
-.instalaciones_items_container{
-  padding: 20px 20px;
-  text-align: initial;
+#Instalaciones {
   width: 70%;
   margin: auto;
+  padding: 60px 0;
 }
-.instalaciones_items {
+.instalaciones_container {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,auto);
-  align-items: center;
-  gap: 10px;
-  margin: 40px 0;
-  overflow: hidden;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 30px;
+  padding: 30px 0;
 }
-.items_container {
-  display: flex;
+.instalaciones_title strong {
+  font-size: 40px;
+  letter-spacing: 6px;
 }
-.items_img {
+.instalaciones_title p {
+  max-width: 500px;
+  color: #959595;
+  margin: 30px 0;
+}
+
+.img_overlay p {
+  color: #959595;
+  font-size: 14px;
+}
+.img_overlay h2 {
+  margin: 20px 0;
+}
+.insta_img {
   width: 100%;
-  border-radius: 8px;
+  object-fit: contain;
+  border-radius: 5px;
 }
+.instalaciones_title {
+  text-align: initial;
+}
+/**Insta estilos**
+
 
 /**Insta estilos**/
 /** Diferencias estilos**/
@@ -512,17 +513,12 @@ footer {
 
   /**hab querys**/
   /**home page **/
-  .instalaciones_items_container{
-    width: 90%;
-  }
-  .instalaciones_items{
+  .instalaciones_container {
     display: flex;
     flex-direction: column;
   }
-  .text_insta_items p{
-    max-width: none;
-  }
-  /** home page**/
+  /** home page**/ 
+  
   /** dif **/
   .diferencias_items_container {
     display: flex;

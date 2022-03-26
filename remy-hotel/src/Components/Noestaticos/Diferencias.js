@@ -1,5 +1,11 @@
 import Datadife from './datadife.json';
 import rhflower from '../Noestaticos/rhflower.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
+
 
 
 const Diferencias = () => {
