@@ -3,12 +3,14 @@ import './App.css';
 import Home from './Components/Pages/Home';
 import Habitaciones from './Components/Pages/Habitaciones';
 import {Routes, Route} from 'react-router-dom'
+import GoToTop from './GoToTop';
 
 
 
 function App() {
   
   return (
+    
     <div className="App">
       <Routes>
         <Route exact path='/' element={<Home/>}/>
@@ -16,6 +18,7 @@ function App() {
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/' element={<Home/>}/>
       </Routes>
+      <GoToTop></GoToTop>
     </div>
   );
 }

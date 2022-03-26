@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import logorh from './img/rhlogowhite.svg';
 
 const Footer =() => {
@@ -22,8 +21,8 @@ const Footer =() => {
         </div>
         <div className='footer_item'>
         <h4>Siguenos</h4><br></br>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href="/"><i class="bi bi-facebook"></i></a>
+        <a href="/"><i class="bi bi-instagram"></i></a>
         </div>
         </footer>
     );

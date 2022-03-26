@@ -1,0 +1,21 @@
+
+[
+    {
+        "id": 1,
+        "section": "Precio justo",
+        "sub_section": "Contamos con una variedad de precios a tu disposición, para que puedas disfrutar de esas vacaciones que tanto te mereces.",
+        "icon": "far fa-money-bill-alt"
+    },
+    {
+        "id": 2,
+        "section": "Experiencia",
+        "sub_section": "Llevamos mas de 5 años brindando la mejor calidad y servicio a las personas de alrededor del mundo.",
+        "icon": "far fa-clock"
+    },
+    {
+        "id": 3,
+        "section": "Ambiente ameno",
+        "sub_section": "Contamos con una diversa variedad de instalaciones para hacer tu estadia mas placentera.",
+        "icon": "far fa-smile"
+    }
+]
