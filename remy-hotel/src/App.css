@@ -364,6 +364,54 @@ footer {
   margin-bottom: 50px;
 }
 
+<<<<<<< HEAD
+=======
+
+/**Notros estilos**/
+/** Diferencias estilos**/
+#Diferencias {
+  background-color: #04040f;
+}
+.diferencias_container {
+  display: inline-block;
+  margin: 50px 0;
+  width: 60%;
+  color: white;
+}
+.main_title_container {
+  font-size: 40px;
+  padding-bottom: 50px;
+  letter-spacing: 6px;
+}
+.diferencias_container strong {
+  margin: 50px 0;
+}
+.diferencias_items_container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(1,auto);
+  gap: 40px;
+}
+
+.item {
+  text-align: initial;
+}
+.item_layout {
+  margin: 20px 0;
+}
+.item_title {
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+.item_title strong i {
+  padding-right: 10px;
+}
+.flower {
+  width: 40vw;
+  margin-bottom: 50px;
+}
+
+>>>>>>> 29917f3b940e4c94f4113a763312cf28a5e9cbf4
 /**Diferencias estilos**/
 /**hab page estilos**/
 .habiwall {
@@ -482,7 +530,10 @@ footer {
   }
   .item {
     text-align: center;
+<<<<<<< HEAD
     max-width: 300px;
+=======
+>>>>>>> 29917f3b940e4c94f4113a763312cf28a5e9cbf4
   }
   /** dif **/
 }
