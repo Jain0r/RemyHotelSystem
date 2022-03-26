@@ -1,5 +1,4 @@
-
-const MainsectionHabi=() => {
+const MainsectionHab=() => {
     return (
    <div>
        <div className='habiwall'>
@@ -15,4 +14,4 @@ const MainsectionHabi=() => {
         </div>
     </div>
     )}
-export default MainsectionHabi;
+export default MainsectionHab;

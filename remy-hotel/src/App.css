@@ -410,7 +410,7 @@ footer {
   margin-bottom: 50px;
 }
 
-f4
+
 /**Diferencias estilos**/
 /**hab page estilos**/
 .habiwall {
@@ -421,9 +421,11 @@ f4
   background-size: cover;
   background-attachment: fixed;
 }
+
 .main_container {
   padding: 50px 0;
 }
+
 .main_container p {
   font-size: 40px;
 }

@@ -1,7 +1,7 @@
 import Datahabi from './datahabi.json';
 import Navbar from '../Estaticos/Navbar';
 import Footer from '../Estaticos/Footer';
-import MainsectionHabi from '../Noestaticos/MainsectionHabi';
+import MainsectionHab from '../Noestaticos/MainsectionHab';
 
 
 
@@ -10,7 +10,7 @@ const  Habitaciones = () => {
   return (
     <div id='Habitaciones'>
       <Navbar></Navbar>
-      <MainsectionHabi></MainsectionHabi>
+      <MainsectionHab></MainsectionHab>
       <div className='main_container'>
         <p>Nuestras Habitaciones</p>
       <div className="container_habi">
@@ -19,7 +19,7 @@ const  Habitaciones = () => {
            return(
            <div className='card_habi' key={data.id}>
              <div className='hab_overlay_container'>
-            <div className='title_hab_overlay_container' data-aos="fade-up">
+            <div className='title_hab_overlay_container'>
              <h4>{data.section}</h4>
              </div>
              <div className='info_hab_overlay_container'>
