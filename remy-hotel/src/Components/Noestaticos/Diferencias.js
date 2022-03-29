@@ -12,7 +12,7 @@ const Diferencias = () => {
     return (
     <div id='Diferencias'>
     <div className="diferencias_container">
-       <div className='main_title_container' data-aos="fade-left" data-aos-duration="1000">
+       <div className='main_title_container' data-aos="fade-left">
            <strong>¿Que nos diferencia?</strong>
        </div>
        <div className="diferencias_items_container">
