@@ -3,7 +3,9 @@ import DataInsta from "./datainsta.json";
 
 
 const Insp = () => {
+
     return ( 
+        
         <div id="Instalaciones">
         <div className="instalaciones_title">
             <strong data-aos="fade-right">Nuestras instalaciones</strong>

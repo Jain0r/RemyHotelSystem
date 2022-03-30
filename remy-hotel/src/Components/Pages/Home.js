@@ -4,6 +4,7 @@ import MainsectionHome from "../Noestaticos/MainsectionHome";
 import Diferencias from "../Noestaticos/Diferencias";
 import Instalaciones from "../Noestaticos/Instalaciones";
 import Nosotros from "../Noestaticos/Nosotros";
+import Locales from "../Noestaticos/Locales";
 
 
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Nosotros></Nosotros>
       <Diferencias></Diferencias>
       <Instalaciones></Instalaciones>
+      <Locales></Locales>
       <Footer></Footer>
     </div>
   );
