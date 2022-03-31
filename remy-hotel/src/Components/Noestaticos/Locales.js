@@ -25,7 +25,7 @@ const Locales=() => {
                    <div>
                          {myLocal === "Miraflores" && (
                              <div className='local_container'>
-                             <div className='local_layout_container' >
+                             <div className='local_layout_container'data-aos="fade-in" >
                              <div>
                              <strong>{myLocal}</strong>
                              <p>Dirección: Cto. de Playas de la Costa Verde, Miraflores 15074.</p>
@@ -35,14 +35,14 @@ const Locales=() => {
                              </form>
                              </div>
                              </div>
-                             <div className='local_img_container'>
+                             <div className='local_img_container'data-aos="fade-in">
                               <img className='local_img' src={hmiraflores} alt="local miraflores"></img>
                              </div>
                              </div>
                            )}
                          {myLocal === "Surco" && (
                              <div className='local_container'>
-                             <div className='local_layout_container'>
+                             <div className='local_layout_container' data-aos="fade-in">
                              <div>
                              <strong>{myLocal}</strong>
                              <p>Dirección: Av. Pedro Venturo 104, Santiago de Surco.</p>
@@ -52,14 +52,14 @@ const Locales=() => {
                              </form>
                              </div>
                              </div>
-                             <div className='local_img_container'>
+                             <div className='local_img_container' data-aos="fade-in">
                               <img className='local_img' src={hsurco} alt="local surco"></img>
                              </div>
                              </div>
                            )}
                          {myLocal === "La Molina" && (
                              <div className='local_container'>
-                             <div className='local_layout_container'>
+                             <div className='local_layout_container' data-aos="fade-in">
                              <div>
                              <strong>{myLocal}</strong>
                              <p>Dirección: Av. Ricardo Elías Aparicio 740, La Molina.</p>
@@ -69,7 +69,7 @@ const Locales=() => {
                              </form>
                              </div>
                              </div>
-                             <div className='local_img_container'>
+                             <div className='local_img_container' data-aos="fade-in">
                               <img className='local_img' src={hlamolina} alt="local la molina"></img>
                              </div>
                              </div>

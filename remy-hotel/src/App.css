@@ -298,6 +298,7 @@ footer {
   max-width: 500px;
   color: #959595;
   margin: 30px 0;
+  font-size: 18px;
 }
 
 .img_overlay p {
@@ -424,7 +425,7 @@ footer {
 
 .nosotros_layout_container {
   width: 50%;
-  margin: 10px 30px;
+  margin: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -500,7 +501,7 @@ footer {
   font-size: 20px;
   margin:  20px auto;
   color: #363636;
-  width: 300px;
+  max-width: 300px;
 }
 
 .local_img {
@@ -533,6 +534,11 @@ footer {
   letter-spacing: 1.5px;
   background: #6c1717;
   color: white;
+}
+.reservar_button_sede:hover {
+  border: 2px solid #6c1717;
+  background: none;
+  color: #6c1717;
 }
 /** Locales **/
 
@@ -644,7 +650,6 @@ footer {
   /** Nosotros **/
   #Nosotros {
     flex-direction: column;
-    width: 100%;
   }
   .nosotros_layout_container {
     width: 90%;
