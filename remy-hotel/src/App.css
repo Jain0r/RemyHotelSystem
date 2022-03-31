@@ -1,8 +1,10 @@
+
 .App {
   text-align: center;
   font-family: 'Noodletitling';
   width: 100%;
   overflow-x: hidden;
+  --swiper-navigation-size:28px;
 }
 @font-face {
   font-family: 'Noodletitling';
@@ -555,29 +557,32 @@ footer {
 .main_container {
   padding: 50px 0;
 }
-
 .main_container p {
   font-size: 40px;
 }
+/**hab page estilos**/
+/** Slider **/
+#Slider {
+  margin: 20px 0;
+}
 .container_habi{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3,auto);
-  width: 90%;
+  display: inline-block;
+  width: 60%;
   margin: auto;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  border-radius: 5px;
 }
 .card_habi {
   display: flex;
   padding: 40px 10px;
   margin: 15px;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 .card_habi p{
-  font-size: 14px;
+  font-size: 15px;
   margin: 5px 10px;
 }
 .images_hab {
-  width: 100%;
+  width: 90%;
   margin: 0 10px;
   border-radius: 10px;
   overflow: hidden;
@@ -620,7 +625,21 @@ footer {
   border: 2px solid white;
 }
 
-  /**hab page estilos**/
+.title_slider_container {
+  margin: 30px 5px;
+}
+.title_slider_container  strong {
+  font-size: 40px;
+  letter-spacing: 6px;
+}
+.swiper-button-prev, .swiper-button-next {
+  color: rgb(119, 118, 118) !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #141414 !important;
+}
+  /** Slider **/
+
   
 
 @media (max-width:1024px){
@@ -637,6 +656,7 @@ footer {
   /**nav querys**/ 
   /**hab querys**/
   .container_habi {
+    width: 80%;
     display: inline-block;
   }
 
@@ -726,10 +746,18 @@ footer {
   }
   /** Nosotros **/
   /** Locales **/
+  .local_layout_container{
+    width: 100%;
+  }
   .local_img {
     width: 90%;
   }
   /** Locales **/
+  /**Slider **/
+  .container_habi {
+    width: 90%;
+  }
+  /**Slider **/
 }
 
 

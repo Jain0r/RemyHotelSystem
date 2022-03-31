@@ -5,6 +5,7 @@ import Diferencias from "../Noestaticos/Diferencias";
 import Instalaciones from "../Noestaticos/Instalaciones";
 import Nosotros from "../Noestaticos/Nosotros";
 import Locales from "../Noestaticos/Locales";
+import Slider from "./Slider";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
       <Diferencias></Diferencias>
       <Instalaciones></Instalaciones>
       <Locales></Locales>
+      <Slider></Slider>
       <Footer></Footer>
     </div>
   );
