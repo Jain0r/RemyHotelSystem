@@ -16,9 +16,9 @@ const Home = () => {
       <MainsectionHome></MainsectionHome>
       <Nosotros></Nosotros>
       <Diferencias></Diferencias>
+      <Slider></Slider>
       <Instalaciones></Instalaciones>
       <Locales></Locales>
-      <Slider></Slider>
       <Footer></Footer>
     </div>
   );
