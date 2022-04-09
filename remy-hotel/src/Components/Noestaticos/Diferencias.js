@@ -1,8 +1,10 @@
 import Datadife from './datadife.json';
-import rhflower from '../Noestaticos/rhflower.svg'
+import rhflower from '../assets/rhflower.svg'
+import '../css/diferencias.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
+
 AOS.init();
 
 
@@ -17,7 +19,7 @@ const Diferencias = () => {
        </div>
        <div className="diferencias_items_container">
         {
-        Datadife && Datadife.map(data => {
+        Datadife.map(data => {
            return (
             <div className="diferencias_item" key={data.id}>
             <div className="item" data-aos="fade-right">

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Miraflores",
+        "dire": " Dirección: Av. José Larco N° 400 Miraflores Perú. ",
+        "phone": " Teléfono: 963 845 943 ",
+        "image": "images/h-miraflores.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Surco",
+        "dire": " Dirección: Av. José Larco N° 400 Miraflores Perú. ",
+        "phone": " Teléfono: 913 845 901 ",
+        "image": "images/h-surco.jpg"
+    },
+    {
+        "id": 3,
+        "name": "La Molina",
+        "dire": " Dirección: Av. José Larco N° 400 Miraflores Perú. ",
+        "phone": " Teléfono: 954 815 983 ",
+        "image": "images/h-lamolina.jpeg"
+    }
+]

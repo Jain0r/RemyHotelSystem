@@ -1,0 +1,14 @@
+
+.App {
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    --swiper-navigation-size:28px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  

@@ -1,5 +1,6 @@
 
 import DataInsta from "./datainsta.json";
+import '../css/instalaciones.css'
 
 
 const Insp = () => {
@@ -14,15 +15,15 @@ const Insp = () => {
         <div>
         <div className="instalaciones_container">
             {
-                DataInsta && DataInsta.map ( data => {
+                DataInsta.map ( ({id, section, sub_section, image}) => {
                  return (
-                     <div key={data.id} data-aos="fade-up">
-                         <div className="img_container">
-                            <img className="insta_img" src={data.image} alt="Instalaciones"></img>
-                         </div>
+                     <div key={id} data-aos="fade-up" className="instalaciones_item">
                          <div className="img_overlay">
-                             <h2>{data.section}</h2>
-                             <p>{data.sub_section}</p>
+                             <strong>{section}</strong>
+                             <p>{sub_section}</p>
+                         </div>
+                         <div className="img_container">
+                            <img className="insta_img" src={image} alt={section}></img>
                          </div>
                      </div>
                  )

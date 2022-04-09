@@ -3,7 +3,8 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import  NavbarData  from './datanavbar.json';
-import logorhwt from '../Estaticos/img/rhlogowtwhite.svg'
+import logorhwt from '../assets/rhlogowtwhite.svg';
+import '../css/navbar.css'
 
 
 
@@ -16,7 +17,7 @@ function Navbar() {
     <>
         <div className='navbar'>
         <div className='logo_container' >
-            <Link to='/' smooth={true} duration={500}>
+            <Link to='/'>
             <img src={logorhwt} className='logorhwt' alt="logo" />
             </Link>
         </div>
@@ -33,10 +34,10 @@ function Navbar() {
         <div className='nav-menu-items-container'>
           <ul className='nav-menu-items'>
             {
-              NavbarData && NavbarData.map(data => {
+              NavbarData.map(({id, section, path, cName}) => {
                 return (
-                    <li key={data.id}>
-                    <Link to={`${data.path}`} onClick={showSidebar} className={data.cName}>{data.section}</Link>
+                    <li key={id}>
+                    <Link to={path} onClick={showSidebar} className={cName}>{section}</Link>
                     </li>
                 )
             }) 
@@ -48,33 +49,3 @@ function Navbar() {
   );
 }
 export default Navbar;
-  /**
-   const Navbar =() => {
-    return (
-        <nav>
-        <div className='logo_container' >
-            <NavLink to='/' smooth={true} duration={500}>
-            <img src={logorhwt} className='logorhwt' alt="logo" />
-            </NavLink>
-        </div>
-        <input type="checkbox" id="check"></input>
-        <label for="check" className='checkbtn'>
-            <i className='bi bi-list'></i>
-        </label>
-        {
-        <ul> 
-            {DataNavbar && DataNavbar.map(data => {
-                return (
-                    <li key={data.id}>
-                    <NavLink to={`${data.path}`}>{data.section}</NavLink>
-                    </li>
-                )
-            }) }
-        </ul>
-         }
-        </nav>
-    );
-  }
-  
-  export default Navbar;
-   */

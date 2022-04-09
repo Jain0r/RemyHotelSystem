@@ -1,0 +1,86 @@
+.habiwall {
+  height: 100vh;
+  background-image: url(../assets/habiwallpaper.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main_container {
+  padding: 40px 20px 20px 20px;
+}
+
+.main_container p {
+  font-size: 40px;
+}
+
+.hotelwall {
+  height: 100vh;
+  background-image: url(../assets/hotelwallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.section_background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.section_overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: calc(.25rem - 1px);
+  display: inline-flex;
+  justify-content: flex-start;
+  text-align: initial;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  margin: auto;
+}
+
+.section_overlay_text p {
+  font-weight: 600;
+}
+
+.section_overlay_text h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section_overlay_text {
+  font-size: 25px;
+  margin: 0 50px;
+}
+
+.reservar_button {
+  border-radius: 5px;
+  font-size: 15px;
+  border: 2px solid white;
+  padding: 8px 30px;
+  background: none;
+  color: white;
+}
+
+.reservar_button i {
+  padding-left: 5px;
+}
+
+.reservar_button:hover {
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, .5);
+}

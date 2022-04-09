@@ -1,9 +1,9 @@
 
-import './App.css';
-import Home from './Components/Pages/Home';
-import Habitaciones from './Components/Pages/Habitaciones';
+import '../Components/css/App.css'
+import Home from '../pages/Home';
+import Habitaciones from '../pages/Habitaciones';
 import {Routes, Route} from 'react-router-dom'
-import GoToTop from './GoToTop';
+import GoToTop from '../Components/Noestaticos/GoToTop';
 
 
 
@@ -18,22 +18,11 @@ function App() {
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/' element={<Home/>}/>
       </Routes>
-      <GoToTop></GoToTop>
+      <GoToTop/>
     </div>
   );
 }
 export default App;
-
-
-
-/**
- <Routes>
-        <Route exact path="/" element={<Home/>}/>
-        <Route exact path='/Habitaciones' element={<Habitaciones/>}/>
-        <Route exact path='/Nosotros' element={<Nosotros/>}/>
-  </Routes>
- */
-
 
 
 

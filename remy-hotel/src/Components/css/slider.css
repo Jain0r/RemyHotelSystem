@@ -1,0 +1,101 @@
+#Slider {
+    margin: 20px 0;
+}
+
+.container_habi {
+    display: inline-block;
+    width: 60%;
+    margin: auto;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    border-radius: 5px;
+}
+
+.card_habi {
+    display: flex;
+    padding: 40px 10px;
+    box-shadow: rgb(9 30 66 / 25%) 0px 1px 1px, rgb(9 30 66 / 13%) 0px 0px 1px 1px;
+    min-height: 530px;
+    /** para tema de demora de carga de imagenes se establece para evitar el movimiento de los componentes**/
+}
+
+.card_habi p {
+    font-size: 15px;
+    margin: 20px 10px;
+}
+
+.images_hab {
+    width: 80%;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hab_overlay_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin: 0 10px;
+    gap: 10px;
+    width: 40%;
+}
+
+.info_hab_overlay_container {
+
+    justify-self: center;
+    max-width: 300px;
+}
+
+.title_hab_overlay_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.image_overlay_container {
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.hab_reservar_button {
+    border-radius: 5px;
+    font-size: 17px;
+    border: 2px solid black;
+    padding: 8px 30px;
+    margin: 0 5px;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
+}
+
+.hab_reservar_button:hover {
+    background-color: #033e6e;
+    color: white;
+    border: 2px solid white;
+}
+
+.title_slider_container {
+    margin: 30px 5px;
+}
+
+.title_slider_container strong {
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgb(119, 118, 118) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #141414 !important;
+}
+
+@media (max-width: 740px) {
+    .container_habi {
+        width: 90%;
+    }
+}

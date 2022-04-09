@@ -1,0 +1,78 @@
+#Contacto {
+  width: 100%;
+  background: #000046;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #1CB5E0, #000046);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #1CB5E0, #000046);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+.contacto_main_container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  padding: 40px 20px;
+  letter-spacing: 1px;
+  color: rgb(241, 238, 238);
+  margin: auto;
+}
+
+.contacto_logo {
+  grid-row: 1/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid white;
+}
+
+.contacto_item {
+  margin: 5px 30px;
+}
+
+.contacto_item strong {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.contacto_item p{
+  margin: 20px 0;
+}
+
+
+.contacto_item a {
+  color: rgb(241, 238, 238);
+}
+
+.contacto_item a i {
+  margin: 0 5px;
+}
+
+.contacto_item a:hover {
+  background: none;
+  color: rgb(6, 4, 24);
+}
+
+.logorhf {
+  padding-right: 40px;
+}
+
+
+@media (max-width: 1024px) {
+  .contacto_main_container {
+    display: inline-block;
+  }
+
+  .contacto_item {
+    margin-top: 40px;
+  }
+
+  .contacto_logo {
+    border-right: none;
+  }
+
+  .logorhf {
+    border-bottom: 2px solid white;
+  }
+}
